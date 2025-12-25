@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header class="site-header">
+    <h1>Profile Management System</h1>
+</header>
+    
+<div class="container">
+    <h1>Personal Profile Form</h1>
+    
+    <div class="nav-links">
+        <a href="viewProfiles.jsp">View All Profiles</a> | 
+        <a href="searchProfile.jsp">Search Profiles</a>
+    </div>
+    <br>
+    
+    <form action="ProfileServlet" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Student ID:</label>
+        <input type="text" name="studentId" placeholder="Enter your student ID" required>
+
+        <label>Program:</label>
+        <input type="text" name="program" placeholder="Enter your program" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Hobbies:</label>
+        <input type="text" name="hobbies" placeholder="Enter your hobbies (comma separated)">
+
+        <label>Self Introduction:</label>
+        <textarea name="intro" rows="5" placeholder="Write a short introduction about yourself"></textarea>
+
+        <button type="submit">Submit Profile</button>
+        <button type="reset" class="reset-btn">Reset</button>
+    </form>
+</div>
+</body>
+</html>
